@@ -1,0 +1,212 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+}
+
+.top-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    margin: 10px;
+
+}
+
+.first-row{
+    display: flex;
+    font-family: "Neue Display";
+    font-weight: 900;
+    text-align: center;
+    font-size: 50px;
+}
+
+.second-row{
+    display: flex;
+    font-family: Neue;
+    font-size: 22px;
+    gap: 20px;
+}
+
+.middle-container{
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.side-1{
+    display: flex;
+    height: 60px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.side-2{
+    display: flex;
+    height: 60px;
+    justify-content: center;
+}
+
+.side-3{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: center;
+}
+
+.third-row{
+    display: flex;
+    height: 100;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    height: 100%;
+    gap: 10px;
+    background: #2b2b2b;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 160%; 
+    animation: marquee 10s linear infinite;
+}
+  
+.box {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2b2b2b;
+    height: 80%;
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    position: relative;
+    flex-shrink: 0;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.box.active {
+    color: white;
+    border: 2px solid white;
+}
+
+
+@keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-60%);
+    }
+  }
+  
+  .wrapper {
+    animation: marquee 10s linear infinite;
+  }
+
+  .wrapper {
+    animation: marquee 10s linear infinite;
+  }
+  
+  .wrapper:hover {
+  animation-play-state: paused;
+}
+
+button {
+    padding: 1rem 2rem 1rem 2rem;
+    border: none;
+    background: #2b2b2b;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+  
+.show-overflow {
+    overflow: visible;
+}
+
+
+@media (max-width: 768px) {
+    .first-row {
+      font-size: 30px;
+    }
+    .second-row {
+      font-size: 16px;
+      gap: 10px;
+    }
+    
+    .middle-container {
+      margin: 5px;
+    }
+    
+    .third-row {
+      height: 80px;
+    }
+    
+    .box {
+      font-size: 14px;
+      width: auto;
+      padding: 0 10px;
+    }
+    
+    .side-2 {
+      flex-direction: column;
+      align-items: center;
+    }
+    input#sentence {
+      width: 90%;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 90%;
+    }
+}
+  
+
+
+/*#charInput {
+
+}*/
+
+/* STYLE FOR THE SUBMIT BUTTON */
+#onclick {
+    background-color: #2b2b2b;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* STYLE FOR THE IMAGE */
+#displayedImage {
+   display: none; /* This line is mandatory */
+}
+

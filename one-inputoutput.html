@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>1 INPUT 1 OUTPUT TEMPLATE</title>
+    </head>
+    <body>
+        <div class="main">
+
+            <div class="top-container">
+                <div class="first-row">A PENNY FOR YOUR THOUGHTS</div>
+                <div class="second-row">CLICK OR DRAG FROM THE FOLLOWING</div>
+            </div>
+    
+            <div class="middle-container">
+                
+                <div class="third-row">
+                    <div class="wrapper">
+                        <div class="box" draggable="true">distorted</div>
+                        <div class="box" draggable="true">living</div>
+                        <div class="box" draggable="true">nonchalant</div>
+                        <div class="box" draggable="true">chilling</div>
+                        <div class="box" draggable="true">posh</div>
+                    </div>                          
+                </div>
+
+                <div class="side-2">
+                    <input type="text" id="sentence" placeholder="Enter a sentence">
+
+                    <button onclick="checkSentence()">Check</button>
+                </div>
+
+
+                <!-- IMAGE TO DISPLAY -->
+                <img id="image" src="" alt="">
+
+
+                <!-- Image Display Script Below -->
+            </div>
+
+        </div>
+
+     <script src="script.js" async defer></script>
+
+    </body>
+</html>
